@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<!--
+	Spatial by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+  <head>
+    <title>HCI: Improve Rate My Professors</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <h1>
+        Ariel <strong><a href="index.html">Bao</a></strong>
+      </h1>
+      <nav id="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutme.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
+    <!-- Main -->
+    <section id="main" class="wrapper">
+      <div class="container">
+        <header class="major special">
+          <h2>Paper-Based improvements for 'Rate My Professors'</h2>
+          <p>CS490 Human-Computer Interaction, Assignment 1</p>
+        </header>
+
+        <!-- Text -->
+        <section>
+          <h3>Introduction</h3>
+          <p>
+			The website I am evaluating and redesigning is 
+			<a href="https://www.ratemyprofessors.com/"><em>Rate My Professor</em></a> (RMP), which is similar 
+			to JHU’s own course evaluations by previous students in courses. This page will 
+			discuss the contextual inquiry of how users engage with the pages, common problems 
+			in their searching and rating experiences, and new features for potential improvements.
+          </p>
+
+		  <hr />
+
+          <h3>Why RMP</h3>
+      <u>RMP has unique advantages over internal evaluation forms</u>
+			  <ul>
+				<li>RMP evaluations are centered on professors, aggregating reviews and ratings from students 
+					since several years ago, and also from different courses and while the professors work at 
+					different institutions. Thus it is a more comprehensive review for students deciding to take 
+					courses since they do not need to go to different links to collect information.</li>
+			  </ul>
+        <u>RMP has wider reach</u>
+        <ul>
+				  <li>Students choosing colleges and have particular interests/faculty preference in mind 
+					  will want to review more perspectives.</li>
+			  </ul>
+				  <u>Despite unique advantages of RMP, it remains as the secondary option for checking reviews
+        </u>
+        </ul>
+        <li>RMP has limited number of reviews</li>
+			  <li>RMP lacks information updates and has varied levels of information quality</li>
+			  <ul>
+				<li>Professor profiles are sometimes not updates, duplicated, same-name entries, and the reviews 
+					sometimes are outdated or contains wrong information.
+				</li>
+			</ul>			  
+		  </ul>
+
+		  <hr />
+          <h3>Target Users</h3>
+          <p> The scope of target users include colleges and professors covered and the referral effects attract users of various types
+			  and purposes.<br/>
+			  <h4>Students</h4>
+				<ul>
+					<li><strong>College students:</strong> enter the website to review a professor's rating
+						of a class they are considering , and rate a professor who they have taken courses under.</li>
+					<li><strong>High school seniors:</strong> choose between schools and looking for specific professors, if they
+						have a specific field of study in mind.
+					</li>
+				</ul>
+			  <h4>Professors</h4>
+			  <ul>
+				  <li>Some professors check the site to learn about their own ratings, improve their teaching quality,
+					  and submit corrections of their profiles if any.</li>
+			  </ul>
+			  Considering that the student persona covers a much larger user base and more frequent actions performed on
+			  the website, the following analysis and suggested design changes will focus on this user group to maximize
+			  the impacts on improving overall user experiences.
+		  </p>		  
+
+		  <hr/>
+
+          <h3>Contextual Inquiry for User Behavior and Experiences</h3>
+          <p>				The goal of my contextual inquiry (CI) was to determine the tasks, ease of completion of each, and the frequency/relevance/value added of each task for users.    </p>
+      <div class="horizontal-arrangement">
+      <p><span class="image left"><img src="images/hci/a1/1.jpg" alt="" style="width:250px"/></span> <!--todo change size-->
+				Below, I will describe the results from observations and interviews with one user of the website. Jennie G is sophomore 
+				majoring in Psychology and Applied Math. She is new to RMP and has only used internal course evaluation sites at JHU before.<br/><br/>
+				I gave Jennie an overview of what the site is for and she decided to explore the reviewing and rating features.<br/>
+				Jennie started inputting JHU and the professor name right into the text fields under “Find a Professor”. She also immediately 
+        started looking for suggested names.      
+      </p>
+    </div>
+
+      <h4>Task 1: Reviewing a Professor's Rating</h4>
+    <div class="horizontal-arrangement">
+        <p>1. Jennie started inputting JHU and the professor name 
+        right into the text fields under “Find a Professor”. She also immediately started looking for suggested names in the dropdown box.<br/>
+      Under this step, she tried 4 professors and were able to find them all. She expressed her surprise for <u>the abundance of professor profiles available</u>. However, once she failed to select the option and searched based on an incomplete spelling, <u>the part name failed to show results</u>. She hesitated for a while to find out why.</p>
+      <img src="images/hci/a1/website-1.png" alt="" style="width:25%;margin-right:10px;"/>
+      <img src="images/hci/a1/website-2.png" alt="" style="width:25%"/>
+    </div>
+       <p>2. While browsing professors’ profiles, she mentioned that she always <u>finds the suggested top/most useful comments very helpful</u> as she agrees to the commentor’s opinion.</p>
+
+       <div class="horizontal-arrangement">
+      <p>3. For a professor that she particularly liked, she saw a 1.0 score and felt the urge to dislike it but did not as <u>she felt the required registration was too much work</u>. She mentioned that it is useful to see that for the only negative comment that stood out, there were only disagreements, which makes the ratings overall positive, and clear-cut. </p>
+      <img src="images/hci/a1/website-3.png" alt="" style="width:600px"/>
+      </div>
+
+    
+      <div class="vertical-arrangement"> 
+        <p>4. However, results on some pages are mixed. On another professor's page, she attempted to make a judgement from the answer endorsement numbers, but found there were far fewer likes & dislikes as she expected, 94% reactions for this professor had below 3 reactions for each. <u>Such low numbers reduced the credibility</u> for her.
+        (The pictures above shows consecutive ratings of teh same professor.)</p> 
+        <div class='horizontal-arrangement' style="align-items: flex-start">
+                  <img src="images/hci/a1/website-4.png" alt="" style="width:30%;height:30%" />
+        <img src="images/hci/a1/website-5.png" alt="" style="width:30%;height:30%" />
+        <img src="images/hci/a1/website-6.png" alt="" style="width:30%;height:30%" />      </div>
+      </div>
+
+      <div class="horizontal-arrangement">
+        <p>5. At the end of browsing through these pages, Jennie noticed the “tags” proportion. She quickly glanced through them and commented that she appreciated the quick overview, but that <u>the section is so small so she did not notice them until the end</u>.</p>
+        <img src="images/hci/a1/website-7.png" alt="" style="width:400px"/>
+      </div>
+      
+      <h4>Task 2: Rating a Professor</h4>
+
+      <div class="horizontal-arrangement">
+        <p>6. When deciding which professor to rate, Jennie chose her favorite one. When asked for the reason, she said that she would want to give endorsements most strongly for this professor. She stopped for about 10 seconds to recall the mandatory course code and guessed one. It turned out that her input is the same as almost everyone else’s, but there were indeed <u>variations for the same course code</u> (eg PSYCH101 and AS200101) which could create confusion. There was no dropdown menu for suggested option.</p>
+        <img src="images/hci/a1/website-8.png" alt="" style="width:400px"/>
+      </div>
+
+      <div class="horizontal-arrangement">
+        <p>8. She revealed her grade for the course and later realized that this field is optional. <u>She did not notice it was optional</u> because the mandatory fields were not marked with (*) or  a mandatory tag. When asked about when she would be willing to reveal grades, she said that personally she would do so if the grade was good, despite the anonymity. She also speculated a strong correlation between the A- (unsatisfactory for commenter) and the only 1.0/negative rating for this professor.</p>
+        <img src="images/hci/a1/website-9.png" alt="" style="width:400px"/>
+      </div>
+
+      <h4>Contextual Inquiry Reflection</h4>
+      <p>Overall, Jennie said that she had little difficulty in completing the task. The few times when I observed her confusion and hesitation were mentioned above. </p>
+      
+      <h5>Pros</h5>
+      <ul>
+        <li>She was surprised that RPM has a thorough collection of professor profiles as a third-party website.</li>
+        <li>RMP allows anonymity for more honest reviews.</li>
+      </ul>
+
+      <h5>Cons</h5>
+      <ul>
+        <li>She listed credibility as her top issue, and wished to see more review entries and endorsements for each comment (30-50).</li>
+        <li>She wished to see more filters, for more targeted information.</li>
+        <li>She said overall she still preferred school course evaluation as that is more course-oriented and she could quickly navigate to her potential courses’ reviews on the same pdf on a webpage.        </li>
+      </ul>
+
+      <p>In consideration of the user types, relative population, their main intents of visiting the websites, and how painful each of the above analyzed breakdown points, I decided to focus on current college students and their searching and rating experiences. This is because the college students group have the largest visiting frequencies and user base compared to other groups using the websites, such as professors or perspectives students. They also have the highest incentive to add content/reviews to the websites or invite their friends to do so, thereby raising credibility of the site and attract more users. </p>
+
+      <p>Relating to personal experiences and interviewing Jennie, I believe that searching for professors and rating professors would be the most frequently performed tasks on the site, exceeding searching for schools, reading college blog posts, etc. Therefore, addressing the credibility, personalization, and presentation clarify would best serve this group.</p>
+
+      <hr />
+
+      <header>
+        <h3>Problem-Understanding with Sequence Diagrams</h3>
+      </header>
+      <img src='images/hci/a1/sequence.png' alt='sequence work model' style="width:100%;"/>
+      
+      <h4>Problem breakdown and highlights</h4>
+      <u>Search</u>
+      <ul>
+        <li>Breakdown 1: Blank results of misspelled searches is not useful, would like to see suggested spellings/pages</li>
+        <li>Breakdown 2: The professors’ orderings seem random, not alphabetical in name or school title. Makes it hard for students to scroll quickly to estimated position </li>
+        <li>Breakdown 3: Lack of updated information on professor profiles, duplicate names with similar field interests and different institutions confuse users until they search up professors’ past employers manually</li>
+      </ul>
+      <u>Reviewing</u>
+      <ul>
+        <li>Breakdown 4: Tags are put at a rather inconspicuous place, and some have vague interpretations.</li>
+        <li>Breakpoint 5: Requiring sign-in or registration for endorsements, which are less value-adding and have low threshold of efforts and time to perform, is ineffective, and reduces participation in easier tasks</li>
+        <li>Breakpoint 6: No basis of comparison, and lacks information of how this professor is placed within the department/school.</li>
+        <li>Breakpoint 7: The total number of comments is too little to be filtered and read in depth, and reduces credibility of the website.</li>
+        <li>Breakpoint 8: Filters are too limited. Posts could only be filtered by course number. Students may be more interested in other particular aspects, eg year, rating, endorsement percentages.</li>        
+      </ul>
+      <u>Rating</u>
+      <ul>
+        <li>Breakpoint 9: unresponsive dropdownW manus, and no standardized/often used suggestions.        </li>
+        <li>Breakpoint 10: Lack of personalized tags        </li>
+      </ul>
+
+      To summarize the problems, below are the <strong>three major areas of improvements</strong>:
+      <ol>
+        <li>Validity upon non-updated and unclear information: repetitive, non-updated, and non-existing entries</li>
+        <li>Lack of personalization: tags, filters</li>
+        <li>Difficulty in navigation due to page layout </li>
+      </ol>
+
+      <p>In consideration of the user types, relative population, their main intents of visiting the websites, and how painful each of the above analyzed breakdown points, I decided to focus on current college students and their searching and rating experiences. This is because the college students group have the largest visiting frequencies and user base compared to other groups using the websites, such as professors or perspectives students. They also have the highest incentive to add content/reviews to the websites or invite their friends to do so, thereby raising credibility of the site and attract more users. </p>
+      <p>Relating to personal experiences and interviewing Jennie, I believe that searching for professors and rating professors would be the most frequently performed tasks on the site, exceeding searching for schools, reading college blog posts, etc. Therefore, addressing the credibility, personalization, and presentation clarify would best serve this group.</p>
+
+      <hr />
+
+      <header>
+        <h4>Paper-Based Prototype</h4>
+        <p>To improve information clarity, personalized choices, credibility, and ease to navigate.</p>
+      </header>
+      
+      <div class="horizontal-arrangement">
+
+      <div class="vertical-arrangement">
+        <strong>1. Increase the search experiences by suggested search and more complete information to locate the correct profile</strong>
+          In brainstorming and interviewing potential users what information might help to distinguish the professor they are looking for, the new prototype includes a table (as compared to just name and institution in the current version) to provide more complete information for users:
+          <ul>
+            <li>The school (including which college) and department</li>
+            <li>Most popular course by the number of ratings for better reference</li>
+            <li>Personal website, added by users, as an external source for professor identity</li>
+            <li>Last update to alert if an entry, and thus institution column, can be outdated</li>
+          </ul>
+          <p>These details will all be “outsourced” from the users, analyzed from the ratings and automatically updated. But manual requests to change will be accepted to, and encouraged in the case of an non-updated entry by highlighting it.<br/>
+          These details will also add <u>more data points of corroboration</u> on which is the correct page the user is looking for. This is especially helpful, since some names are common. For example, “John Smith” shows 172 search results.</p>
+        </div>
+      <img src="images/hci/a1/prot-1.png" alt="" style="height:30%;width: 40%"/>
+</div>
+
+<div class="horizontal-arrangement">
+  If a professor’s name is long, hard to spell and input incompletely or wrongly, the search engine would prompt suggested choices. For instance, the below choice is the search result when the user inputs “Konstantopulos” for JHU ChemBE Professor Konstantinos Konstantopoulos.
+  <img src="images/hci/a1/prot-2.png" alt="" style="height:30%;width: 40%"/>
+</div>
+
+
+<strong>2. Encouraging more reviews and user endorsements to increase data quantity and site credibility</strong>
+
+      <div class="horizontal-arrangement">
+<p>The ideal level of endorsements on the page would not be a single-digits, nor will the number of likes to each comments. The picture below shows that in an ideal page there will be about 30 or more ratings for a professor, and more than 10 likes for the most helpful rating. It also displays how much weightage is for each tag people frequently associate with the professor.<br/>
+
+To encourage more ratings and likes, we would enable easier access to starting a rating and incentivize it by making it the requirements for unlocking more reviews. The prototype page includes at least four buttons where people can access and be motivated to start their own review: “add your tags”, “write your own review”, “invite friend to review”, and “registering/writing a review to unlock hidden ratings”.<br/><br/>
+
+We will also NOT require log-in for simple actions like liking/endorsing a comment. For such <u>low-threshold actions and low value-added information</u>, we will enable users to <u>carry them out with the least barriers possible</u>. However, for more value-added tasks like checking reviews, we will <u>reward them with more information if they take the motivation to add to our database</u>. This is likely to cause <u>more interaction levels</u>, both easy (likes) and more complicated ones (write and read reviews).
+
+With more reviews added to the page, we will create a larger review database, consisting of multiple ones in all past years, and for all courses. This is a unique advantage of RPM over school systems.</p>
+        <img src="images/hci/a1/prot-3.png" alt="" style="height:30%;width: 40%"/>
+      </div>
+
+      
+      <div class="vertical-arrangement">
+        <p><strong>3. Enabling filter interested information</strong><br/>
+        Not all information is of equal values to the users, and the new prototype will allow users to <u>filter and selectively review information most needed for their specific needs</u>. There would be a filter besides comment on each profile page to display users’ target comments.<br/>
+        <u>Use case 1</u>: Some users may believe longer comments meant more effort in writing them and would only read these of higher quality, while others who want to save time would want to read concise ones. The filter allows them to select comment lengths.<br/>
+        <u>Use case 2</u>: Some users hesitate whether to take a class if they hear mixed comments. Some have specific characteristics of courses and professors’ teaching styles that they would want to avoid and would be interested to read only what people dislike about a professor. Some would love to see the good qualities of the professor. In any way, they can choose the range of positive or negative ratings to choose from.<br/>
+        <u>Use case 3</u>: There is a higher chance that users visit RPM when considering whether to enroll in the professor’s most popular courses. The course options will be listed as well.</p>
+<div class="horizontal-arrangement" style="align-items: center;">
+    <img src="images/hci/a1/prot-4.png" alt="" style="width:600px"/>
+    <p style="font-size: 30px; font-weight: bold;"> Select negative -></p>
+        <img src="images/hci/a1/prot-5.png" alt="" style="width:400px"/>
+</div>
+      </div>
+
+      
+      <div class="horizontal-arrangement">
+        <p><strong>4. Standardized input format and personalized choices in ratings</strong><br/>
+        Since it is confusing for users to know what format of the course to input, they will have choices on selecting the course code for most frequently input choices. If their choice is not found, they can select the “+” sign to manually input, in which case they will also know what format (eg AMS101 vs EN.553.101) to input.<br/>
+        Required fields will be marked with a star, so users do not mistaken optional ones with required ones, and are less likely to drop out if inputting optional grades intimidate them.<br/></p>
+        <img src="images/hci/a1/prot-6.png" alt="" style="width:400px"/>
+      </div>
+
+      <div class="vertical-arrangement">
+        Users may also find the provided tags restrictive or have vague interpretations based on conversations with the users. Thus, the prototype enable them to always add their own.       
+      <div class="horizontal-arrangement">
+        <img src="images/hci/a1/prot-6.png" alt="" style="width:400px"/>
+        <img src="images/hci/a1/prot-7.png" alt="" style="width:400px"/>
+      </div>
+    </div>
+
+      
+      <div class="horizontal-arrangement">
+        <p><strong>5. Cleaner layout</strong><br/>
+        This aspect involves some changes on page display details.<br/>
+The older system has “find a professor by name”, “find a professor by school”, and “rate a professor on the homepage”. It might confuse users on the difference in search results between the first two. The new prototype just replaces them with one uniform button, and shows what information is required or not required for the field.</br></br>
+As mentioned above, professor information in search is also displayed in greater details, and the required fields in rating them marked clearly with red. Such small changes will result in better understanding and intuition on navigating through the website.</br>
+        Now, the previously inconspicuous buttons, such as the tags, were also changed to more eye-catching colors eg red, to capture user attention.</p> 
+        <img src="images/hci/a1/prot-8.png" alt="" style="width:400px"/>
+      </div>
+
+      <hr />
+
+      <header>
+        <h4>Prototype Testing Video</h4>
+      </header>
+        Elaine S., a junior studying Chemical and Biomolecular Engineering participated in the prototype testing.
+
+      <hr />
+
+      <header>
+        <h4>Paper-based Prototype Evaluation</h4>
+      </header>
+              <u>Positives observations:</u>
+              Generally, the new prototype was successful in presenting users a clearer and easier-to-navigate interface, and help users improve on information clarity, and incentivize them to contribute their own reviews.
+        <ul>
+          <li>Elaine is able to follow the entire process rather smoothly and rarely needs to be prompted to proceed.</li>
+          <li>For the search design, Elaine was able to identify from the details on professor department, course, and school the correct page she was looking for.</li>
+          <li>She did make a spelling mistake on searching for a long name, and was satisfied with the suggested results on misspelled searches.</li>
+          <li>For the profile design, she was able to identify the different places that she can click to add ratings.</li>
+          <li>Elaine was able to discover the personalization options, and filter and add tags as her wish.</li>
+          <li>Under the new layout, Elaine could quickly locate the tags, identify mandatory input fields, etc. </li>
+        </ul>
+        <u>Observations on design improvements:</u>
+        More visual cues and clearer page transitions would improve the experience.
+        <ul>
+          <li>During testing, I found out that there could be more visual feedback/cues when users make a selection (eg tags no longer greyed-out when selected).</li>
+          <li>There could be more hints to give users better intuitions on which pages the "back" icon return to.</li>
+        </ul>
+
+      <p>
+              
+      </p>
+      <hr />
+
+      <header>
+        <h4>Paper-based Prototype Evaluation</h4>
+      </header>
+      <p>For the next steps, I would love to conduct the prototype design tests on more quantities and types of users to ensure they meet the needs of others, and test how users would explore the website and thus measure the website functions' discoverability and user experience ratings under ambiguous situations (wihtout clear instructions).</p>
+
+
+      <hr />
+
+
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container">
+        <ul class="icons">
+          <li><a href="#" class="icon fa-facebook"></a></li>
+          <li><a href="#" class="icon fa-twitter"></a></li>
+          <li><a href="#" class="icon fa-instagram"></a></li>
+        </ul>
+        <ul class="copyright">
+          <li>&copy; JHU HCI 2020, Ariel Bao</li>
+          <li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
